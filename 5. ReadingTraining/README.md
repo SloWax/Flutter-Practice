@@ -1,4 +1,4 @@
-# sharedpreferences
+# ReadingTraining
 
 1. SharedPreferences
 2. FloatingActionButton

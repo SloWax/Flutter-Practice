@@ -44,7 +44,7 @@ class RowColumn extends StatelessWidget {
 List<Widget> createBox(int numBox) {
   int i = 0;
   List<Widget> boxList = [];
-  List randomColor = [
+  List colorList = [
     Colors.red,
     Colors.green,
     Colors.blue,
@@ -55,7 +55,7 @@ List<Widget> createBox(int numBox) {
   while (i < numBox) {
     Expanded box = Expanded(
         child: Container(
-            color: randomColor[i],
+            color: colorList[i % colorList.length],
             // width: 50,
             // height: 50,
             child: Text(i.toString())));

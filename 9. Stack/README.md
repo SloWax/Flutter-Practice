@@ -46,6 +46,7 @@ List<Widget> createBox(int numBox) {
 <p align="center">
 <img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/caf39d86-743d-4fe3-b3c4-97a2fd6e000d">
 </p>
+
 ```
 while (i < numBox) {
     Align box = Align(
@@ -67,6 +68,7 @@ while (i < numBox) {
 <p align="center">
 <img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/48dc13b1-32ea-4ed0-83bd-be9c310f90f8">
 </p>
+
 ```
 while (i < numBox) {
     Positioned box = Positioned(
@@ -84,3 +86,9 @@ while (i < numBox) {
     boxList.add(box);
 }
 ```
+
+## Practice
+
+<p align="center">
+<img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/8838960a-378f-4ff1-9ab6-34eb981cee82">
+</p>

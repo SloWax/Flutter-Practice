@@ -34,10 +34,64 @@ class RowColumn extends StatelessWidget {
       height: sizeY,
       child: Stack(
         // fit: StackFit.expand,
-        children: createBox(5),
+        children: showChickenLayout(sizeX, sizeY),
       ),
     );
   }
+}
+
+List<Widget> showChickenLayout(double sizeX, double sizeY) {
+  List<Widget> layoutChildren = <Widget>[];
+  Container background = Container(
+    decoration: const BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage('assets/20240522501170.jpg'),
+            fit: BoxFit.fitHeight)),
+  );
+
+  layoutChildren.add(background);
+
+  Positioned chickenCard = Positioned(
+    top: sizeY / 20,
+    left: sizeX / 20,
+    right: sizeX / 20,
+    child: Card(
+      elevation: 12,
+      color: Colors.white70,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      child: const Column(
+        children: [
+          Text(
+            '치킨데이',
+            style: TextStyle(
+                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.amber),
+          ),
+          Padding(
+            padding: EdgeInsets.all(12),
+            child: Text('오늘은 치킨이닼 치킨먹는닼'),
+          )
+        ],
+      ),
+    ),
+  );
+
+  layoutChildren.add(chickenCard);
+
+  Positioned btnOrder = Positioned(
+      bottom: sizeY / 20,
+      left: sizeX / 20,
+      right: sizeX / 20,
+      child: ElevatedButton(
+        child: const Text(
+          '주문하기',
+          style: TextStyle(fontSize: 24),
+        ),
+        onPressed: () {},
+      ));
+
+  layoutChildren.add(btnOrder);
+
+  return layoutChildren;
 }
 
 List<Widget> createBox(int numBox) {

@@ -35,7 +35,8 @@ EdgeInsets.only(left: 100.0)
 
 ## EdgeInsets.symmetric
 - 수직(vertical) 및 수평(horizontal)으로 offset을 만들 때 사용
-ex)```
+
+```
 EdgeInsets.symmetric(vertial: 20.0)
 ```
 
@@ -67,7 +68,6 @@ borderRadius: BorderRadius.all(Radius.circular(30))
 <p align="center">
 <img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/5941a9da-aa16-4c70-95d5-873bce9b8b1c">
 </p>
- 
 
 ```
 borderRadius: BorderRadius.only(
@@ -75,14 +75,13 @@ borderRadius: BorderRadius.only(
           bottomRight: Radius.circular(30)
           )
 ```
+
 # Gradient
 
 <p align="center">
 <img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/faa5f593-54d8-4298-bc9a-b2012549092b">
 <img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/4c05d82b-b0fc-443c-857c-417d0d8ff0f8">
 </p>
-
-
 
 ```
 class _gradient extends StatelessWidget {
@@ -143,6 +142,7 @@ class _image extends StatelessWidget {
   }
 }
 ```
+
 ## BoxFit.contain
 <p align="center">
 <img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/83d3b6e8-0628-4e2a-af81-4237c5b62ceb">
@@ -174,6 +174,7 @@ image: DecorationImage(fit: BoxFit.fill)
 <p align="center">
 <img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/6c87678e-a014-4223-ab25-0aa4b320a0a5">
 </p>
+
 ```
 image: DecorationImage(repeat: ImageRepeat.repeat)
 ```

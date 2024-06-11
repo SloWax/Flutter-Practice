@@ -105,6 +105,7 @@ Column(
 <p align="center">
 <img width="200" alt="7" src="https://github.com/SloWax/Flutter-Practice/assets/62653558/fa7c01d9-2b88-46ed-9c5d-01d6b9bdca2e">
 </p>
+
 ```
 Row(
    textDirection: TextDirection.rtl,
